@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<os:openServiceDescription
+    xmlns:os="http://www.microsoft.com/schemas/openservicedescription/1.0">
+    <os:homepageUrl>http://www.usetrackthis.com</os:homepageUrl>
+    <os:display>
+        <os:name>Track package using Trackthis</os:name>
+        <os:icon>http://www.usetrackthis.com/favicon.ico</os:icon>
+        <os:description>Easily track all your packages across all carriers</os:description>
+    </os:display>
+    <os:activity category="Add">
+        <os:activityAction context="selection">
+            <os:execute action="http://www.usetrackthis.com/index/starttrack?" method="get">
+                <os:parameter name="pkgCode" value="{selection}" type="text" />
+                <os:parameter name="pkgName" value="{selection}" type="text" />
+                <os:parameter name="pkgCarrier" value="auto" type="text" />
+            </os:execute>
+        </os:activityAction>
+    </os:activity>
+</os:openServiceDescription>

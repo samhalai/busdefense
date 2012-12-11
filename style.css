@@ -1,0 +1,27 @@
+﻿ body {  
+    margin:0px;  
+    padding:0px;  
+    text-align:center;
+    background:url(#myMap);
+  }  
+  
+  canvas{  
+    outline:0;  
+    border:1px solid #000;  
+    margin-left: auto;  
+    margin-right: auto;
+    z-index: 5;
+    position: relative;
+  }
+  
+  #myMap 
+  {
+    width: 480px;
+    height: 330px;
+    margin: auto;
+    margin-top: -330px;
+    position: relative;
+    z-index:0;
+    overflow:hidden;
+    
+  }

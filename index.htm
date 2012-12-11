@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<head>  
+  <title>Bus Defense</title>  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name = "viewport" content = "width = 480, height = 300,
+       initial-scale = 1.0, user-scalable = no">
+  <link rel="apple-touch-startup-image" href="splashscreen2.png" />
+  <link rel="Stylesheet" type="text/css" href="style.css" />
+  </head>  
+  <body onload="Bd.init();">  
+    <canvas id="c"></canvas>
+    <div id="myMap"></div>
+    <div id="control"><a href="javascript:Bd.togglePlay();">Play/Pause</a></div>
+    <script src="bd.js"></script>
+    <script src="game.js"></script>
+    <script src="map.js"></script>
+    <script src="route.json.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <div id="debug"></div>
+  </body>  
